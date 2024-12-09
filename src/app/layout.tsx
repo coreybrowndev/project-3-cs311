@@ -25,9 +25,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Create a navigation bar */}
+        <nav className="flex justify-center gap-6 items-center p-4 bg-gray-800 text-white">
+          <a href="/" className="text-lg">
+            Home
+          </a>
+          <a href="/recipes" className="text-lg">
+            Recipe Generator
+          </a>
+          <a href="/search" className="text-lg">
+            Search Recipes
+          </a>
+          <a href="/creator" className="text-lg">
+            Concoction Incubator
+          </a>
+        </nav>
+
         {children}
       </body>
     </html>
