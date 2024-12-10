@@ -34,10 +34,10 @@ export default function RootLayout({
           <a href="/recipes" className="text-lg">
             Recipe Generator
           </a>
-          <a href="/search" className="text-lg">
+          <a href="/search" className="text-lg hidden md:block">
             Search Recipes
           </a>
-          <a href="/creator" className="text-lg">
+          <a href="/creator" className="text-lg hidden md:block">
             Concoction Incubator
           </a>
         </nav>

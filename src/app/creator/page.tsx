@@ -76,7 +76,7 @@ const CreatorPage = () => {
 
       {error && <p className="text-red-600 font-medium">{error}</p>}
       {success && <p className="text-green-600 font-medium">{success}</p>}
-      <div className="flex w-full">
+      <div className="flex flex-col gap-4 md:flex-row w-full">
         <form onSubmit={handleSubmit} className="w-full bg-gray-100 p-6 rounded-lg shadow-md flex flex-col gap-4">
           <h2 className="text-xl font-semibold text-gray-700">Add Ingredient</h2>
           <div className="flex flex-col gap-3">

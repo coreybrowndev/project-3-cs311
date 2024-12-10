@@ -85,7 +85,7 @@ const RecipeGeneratorPage = () => {
   }, [tags]);
 
   return (
-    <div className="max-w-4xl mx-auto py-8">
+    <div className="max-w-4xl mx-auto py-8 px-4 md:px-0">
       <h1 className="text-4xl font-bold bg-blue-100 p-2 pr-6 rounded-lg">Generate Recipe</h1>
       <div className="my-4">
         <label className="font-bold border border-white bg-slate-100 p-2 pr-6 rounded-lg mb-2 block block mb-2">Select Tags (2-5):</label>
