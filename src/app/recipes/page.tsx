@@ -11,7 +11,7 @@ const RecipeGeneratorPage = () => {
   const [recipeName, setRecipeName] = useState("");
   const [recipeImage, setRecipeImage] = useState(null);
 
-  const handleImageUpload = (e) => {
+  const handleImageUpload = (e: any) => {
     setRecipeImage(e.target.files[0]);
   };
 
@@ -61,7 +61,7 @@ const RecipeGeneratorPage = () => {
     setGeneratedSteps([]);
   };
 
-  const attachTag = (e) => {
+  const attachTag = (e: any) => {
     const tag = e.target.value;
     if (tags.includes(tag)) {
       setTags(tags.filter((t) => t !== tag));
