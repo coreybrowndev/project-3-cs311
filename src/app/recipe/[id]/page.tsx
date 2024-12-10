@@ -4,9 +4,17 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import "animate.css";
 
+type Recipe = {
+  id: number;
+  name: string;
+  descriptor: string[];
+  steps: string[];
+  likes: number;
+};
+
 const SingleRecipePage = () => {
-  const [recipe, setRecipe] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
+  const [recipe, setRecipe] = useState<Recipe | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
   const [likes, setLikes] = useState<number>(0);
 
   const params = useParams();
